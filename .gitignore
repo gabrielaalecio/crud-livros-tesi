@@ -1,0 +1,5 @@
+/venv
+/livro/livro
+/livro/livroApp/__pycache__
+/livro/livroApp/migrations/__pycache__
+/livro/db.sqlite3
