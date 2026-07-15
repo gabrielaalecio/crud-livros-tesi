@@ -1,5 +1,9 @@
 /venv
-/livro/livro
+/livro/livro/__pycache__
+/livro/livro/settings.py
+/livro/livro/wsgi.py
+/livro/livro/asgi.py
+/livro/livro/__init__.py
 /livro/livroApp/__pycache__
 /livro/livroApp/migrations/__pycache__
 /livro/db.sqlite3

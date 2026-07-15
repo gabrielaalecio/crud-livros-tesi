@@ -9,6 +9,3 @@ class Livro(models.Model):
     obs_livro = models.CharField()
     data_inicio = models.DateField()
     data_fim = models.DateField()
-    
-    def __str__(self):
-        return self.titulo

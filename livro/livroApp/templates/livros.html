@@ -9,11 +9,24 @@
 
 <ul>
     {% for livro in livros %}
-        <li>{{ livro.titulo }}</li>
+        <li>Título: {{ livro.nome_livro }}</li>
+        <ul>
+            <li>Autor: {{ livro.autor_livro }}</li>
+            <li>Nota: {{ livro.nota_livro }}</li>
+            <li>Início Leitura: {{ livro.data_inicio}}</li>
+            <li>Fim Leitura: {{ livro.data_fim }}</li>
+        </ul>
+        
+        </li><a href="{% url 'editar' livro.id %}">Editar</a>
+        </li><a href="{% url 'excluir' livro.id %}">Excluir</a>
     {% empty %}
         <li>Nenhum livro cadastrado.</li>
     {% endfor %}
 </ul>
+
+<a href="{% url 'adicionar' %}">
+    Adicionar Livro
+</a>
 
 </body>
 </html>
