@@ -22,3 +22,4 @@ class FormCadastro(forms.ModelForm):
             'data_inicio': 'Data de Início da Leitura',
             'data_fim': 'Data de Conclusão',
         }
+        
